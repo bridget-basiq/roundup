@@ -1,12 +1,12 @@
-name: Hourly cron job
+name: Every minute cron job
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 * * ? * *'
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
-      - name: Hourly cron job
+      - name: Every minute job
         run: |
           curl --request POST \
           --url 'https://roundup-eight.vercel.app/api/task' \
