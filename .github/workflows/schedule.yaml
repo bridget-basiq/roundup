@@ -9,5 +9,5 @@ jobs:
       - name: Hourly cron job
         run: |
           curl --request POST \
-          --url 'https://example.com/api/task' \
-          --header 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+          --url 'roundup-eight.vercel.app/api/task' \
+          # --header 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
